@@ -27,18 +27,22 @@ class Home extends Component {
         {/* <h1 className={style.wrapper}>
           Login form
         </h1>
-        <p>{count}</p>
+        <h1>Parent</h1>
+        <h3>{count}</h3>
         <Button className={s.custom} type="primary" onClick={handleIncrement}>increment</Button>
         <Button shape="round" onClick={handleDecrement}>Decremnt</Button>
         <Button onClick={handleIncrementCallback}>runs on count : 3 </Button>
         <CustomButton />
-        <Child age={54} name='Muzamil' />
+        <Child age={54} name='Muzamil' /> */}
         <Button onClick={this.moveFurther}>Fetch data</Button>
         {loading ? <h1>Data is loading</h1>
-          : users.map((item, key) => <p key={key}>{item.name}</p>)} */}
+          : users.map((item, key) =>
+            <p key={key}>{item.name}</p>
+          )}
         {/* <FaceBook /> */}
-        {/* <ReduxForm /> */}
-        <FieldLevelValidationForm onSubmit={this.submit} />
+        {/* {/* <ReduxForm /> */}
+        {/* <FieldLevelValidationForm onSubmit={this.submit} /> */}
+        <h1>Landing page</h1>
       </Fragment>
     )
   }

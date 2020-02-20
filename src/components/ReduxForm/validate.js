@@ -1,7 +1,8 @@
 /* eslint-disable no-debugger */
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import _ from 'lodash'
+import _ from 'lodash';
+
 const validate = values => {
   const errors = {};
   if (!_.get(values, 'username') || _.get(values, 'username').length < 1) {

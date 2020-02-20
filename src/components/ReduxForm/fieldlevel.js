@@ -9,6 +9,7 @@ const renderField = ({
   input,
   label,
   type,
+
   meta: { touched, error, warning }
 }) => (
     <div>
@@ -25,14 +26,14 @@ const renderField = ({
 
 const FieldLevelValidationForm = props => {
   const { handleSubmit, pristine, reset, submitting, error } = props;
-  debugger
+  console.log('prestine', pristine, 'sss', submitting)
   return (
     <form onSubmit={handleSubmit}>
       <Field
         name="username"
         type="text"
         component={renderField}
-        label="Username"
+        label="Usernamewee"
       />
       <Field
         name="email"
@@ -53,7 +54,7 @@ const FieldLevelValidationForm = props => {
         label="Phone number"
       />
       <div>
-        <button type="submit" disabled={submitting}>
+        <button type="submit" disabled={pristine}>
           Submit
         </button>
         {/* prestine tells if any field is touched then enables the clear button */}
