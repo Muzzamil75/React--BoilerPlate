@@ -15,3 +15,13 @@
 #### 6- Styled Component
 
 #### 7- React-router-dom
+
+### Practice project
+
+of
+
+## Google/facbook login
+
+## Privat routing
+
+## Redux Form
